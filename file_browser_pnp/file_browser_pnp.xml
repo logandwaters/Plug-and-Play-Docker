@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FileBrowser-PNP</Name>
+  <Repository>filebrowser/filebrowser</Repository>
+  <Registry>https://hub.docker.com/r/filebrowser/filebrowser</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/filebrowser/filebrowser/issues</Support>
+  <Project>https://github.com/filebrowser/filebrowser</Project>
+  <Description>File Browser with a simplified one-click install.</Description>
+  <Overview>filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and>
+  <Category>Cloud: Productivity: Tools: Other: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/logandwaters/docker/file-browser-pnp/Icon.png>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1729963700</DateInstalled>
+
+  <!-- Port Configuration -->
+  <Config Name="WebUI Port" Target="80" Default="8080" Description="Binds the Host Port (Default of 8080) to the internal container port of 80 for UI access" Type="Port" Display="always" Required="true"/>
+
+  <!-- Volume Configuration -->
+  <Config Name="Path of Directory to Access" Target="/srv" Default="" Description="Specify the path you would like to access within the UI" Type="Path" Display="always" Req>
+  <Config Name="Path to Database" Target="/db" Default="/mnt/user/appdata/filebrowser/db" Description="Path to the built-in database (do not change)" T>
+
+  <MySource>https://github.com/filebrowser/filebrowser</MySource>
+</Container>
