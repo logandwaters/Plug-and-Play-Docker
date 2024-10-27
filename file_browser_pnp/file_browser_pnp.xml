@@ -10,11 +10,27 @@
   <Support>https://github.com/filebrowser/filebrowser/issues</Support>
   <Project>https://github.com/filebrowser/filebrowser</Project>
   <Description>File Browser with a simplified one-click install.</Description>
-  <Overview>filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and>
+
+  <Overview>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory.&#xD;&#xD;
+This software was created by the File Browser Team. This container is pulled from the official File Browser repo and has been configured for simple one-click install with improved instructions and configs.&#xD;&#xD;
+Instructions:&#xD;
+1. Set desired webUI port (Default 8080)&#xD;
+2. Set the directory you wish to access from the webUI&#xD;
+3. Deploy!&#xD;
+4. Login with the default credentials, User: admin, Pass: admin&#xD;
+5. Change the default password asap!&#xD;
+6. Enjoy!&#xD;&#xD;
+Part of the Plug-and-Play-Docker Repo set of apps by logandwaters.&#xD;&#xD;
+Helpful links Below.&#xD;&#xD;
+Official GitHub Repo: https://github.com/filebrowser/filebrowser&#xD;
+Official Docs: https://filebrowser.org/&#xD;
+Report Software Issues: https://github.com/filebrowser/filebrowser/issues&#xD;
+Report Container Template Issue: https://github.com/logandwaters/Plug-and-Play-Docker/issues</Overview>
+
   <Category>Cloud: Productivity: Tools: Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL/>
-  <Icon>https://github.com/logandwaters/docker/file-browser-pnp/Icon.png>
+  <TemplateURL>https://raw.githubusercontent.com/logandwaters/Plug-and-Play-Docker/refs/heads/main/file_browser_pnp/file_browser_pnp.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/logandwaters/Plug-and-Play-Docker/refs/heads/main/file_browser_pnp/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -24,8 +40,8 @@
   <Config Name="WebUI Port" Target="80" Default="8080" Description="Binds the Host Port (Default of 8080) to the internal container port of 80 for UI access" Type="Port" Display="always" Required="true"/>
 
   <!-- Volume Configuration -->
-  <Config Name="Path of Directory to Access" Target="/srv" Default="" Description="Specify the path you would like to access within the UI" Type="Path" Display="always" Req>
-  <Config Name="Path to Database" Target="/db" Default="/mnt/user/appdata/filebrowser/db" Description="Path to the built-in database (do not change)" T>
+  <Config Name="Path of Directory to Access" Target="/srv" Default="" Description="Specify the path you would like to access within the UI" Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Database" Target="/db" Default="/mnt/user/appdata/filebrowser/db" Description="Path to the built-in database (do not change)" Type="Path" Display="always" Required="false"/>
 
   <MySource>https://github.com/filebrowser/filebrowser</MySource>
 </Container>
