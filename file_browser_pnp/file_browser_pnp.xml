@@ -28,11 +28,7 @@ Official Docs: https://filebrowser.org/&#xD;
 Report Software Issues: https://github.com/filebrowser/filebrowser/issues&#xD;
 Report Container Template Issue: https://github.com/logandwaters/Plug-and-Play-Docker/issues</Overview>
 
-  <Requires>Before first deployment, run the following in the Unraid terminal to create the required paths and permissions:&#xD;&#xD;
-mkdir -p /mnt/user/appdata/filebrowser&#xD;
-touch /mnt/user/appdata/filebrowser/filebrowser.db&#xD;
-chown -R 1000:1000 /mnt/user/appdata/filebrowser&#xD;
-chmod -R 775 /mnt/user/appdata/filebrowser</Requires>
+  <Requires>Before first deployment, run the following in the Unraid terminal to create the required paths and permissions:&#x0A;&#x0A;mkdir -p /mnt/user/appdata/FileBrowser-PNP&#x0A;touch /mnt/user/appdata/FileBrowser-PNP/filebrowser.db&#x0A;chown -R 1000:1000 /mnt/user/appdata/FileBrowser-PNP&#x0A;chmod -R 775 /mnt/user/appdata/FileBrowser-PNP</Requires>
 
   <Category>Cloud: Productivity: Tools: Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
@@ -47,8 +43,8 @@ chmod -R 775 /mnt/user/appdata/filebrowser</Requires>
 
   <!-- Volume Configuration -->
   <Config Name="Path of Directory to Access" Target="/srv" Default="/mnt/user" Description="Directory to access within the UI." Type="Path" Display="always" Required="true"/>
-  <Config Name="Path to Config" Target="/config" Default="/mnt/user/appdata/filebrowser" Description="Stores configuration and settings.json." Type="Path" Display="always" Required="true"/>
-  <Config Name="Path to Database File" Target="/database.db" Default="/mnt/user/appdata/filebrowser/filebrowser.db" Description="Persistent database file for users and settings." Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Config" Target="/config" Default="/mnt/user/appdata/FileBrowser-PNP" Description="Stores configuration and settings.json." Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Database File" Target="/database.db" Default="/mnt/user/appdata/FileBrowser-PNP/filebrowser.db" Description="Persistent database file for users and settings." Type="Path" Display="always" Required="true"/>
 
   <!-- Environment Variables -->
   <Config Name="File Browser Database Path" Target="FB_DATABASE" Default="/database.db" Description="Forces File Browser to use the mapped database file for persistence." Type="Variable" Display="always" Required="true"/>
