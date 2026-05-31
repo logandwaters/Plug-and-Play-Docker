@@ -1,5 +1,12 @@
 # Plug-and-Play Docker Repository
 
+> [!CAUTION]
+> As of 2026-06-01, this repository is deprecated and has been migrated to: https://github.com/logandwaters/unraid-docker-templates.
+>
+> This repository contains outdated templates with known configuration issues and is no longer maintained. It should not be used.
+>
+> This repository is scheduled for permanent deletion on 2026-07-01.
+
 ## Overview  
 The **Plug-and-Play Docker** (PnP Docker) repository contains custom templates for various software, adhering to core principles:
 
